@@ -869,6 +869,9 @@ pub struct MiniTickerEvent {
 
     #[serde(rename = "q")]
     pub quote_volume: String,
+    
+    #[serde(rename = "c")]
+    pub last_price: f64
 }
 
 #[derive(Debug, Serialize, Deserialize, Clone)]
